@@ -41,6 +41,7 @@
 	display: block;
 	padding: 0px 0px 0px 1px;
     width: 100%;
+    max-height: 400px;
     box-shadow: 0px 0px 20px grey;
 }
 .dg-wrapper a div{
@@ -56,8 +57,15 @@
 	//display: none;
 	//position: absolute;
 }
+.dg-wrapper a div{
+    display: hidden;
+    color: #fff;
+}
 .dg-wrapper a.dg-center div{
 	display: block;
+    //background: #aaa;
+    color: #000;
+    font-size: 0.8em;
 }
 .dg-container nav{
 	width: 58px;
