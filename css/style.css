@@ -1,6 +1,6 @@
 .dg-container{
 	width: 100%;
-	height: 450px;
+	height: 415px;
 	position: relative;
 }
 .dg-wrapper{
@@ -122,5 +122,5 @@
     text-align: center;
     padding-bottom: 1em;
     padding-top: 0.5em;
-    margin-top: -2.0em;
+    //margin-top: -2.0em;
 }
