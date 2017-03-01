@@ -23,7 +23,7 @@
     $.Gallery.defaults 		= {
         current		: 0,	// index of current item
 autoplay	: false,// slideshow on / off
-interval	: 2000  // time between transitions
+interval	: 200  // time between transitions
     };
 
     $.Gallery.prototype 	= {
@@ -225,6 +225,7 @@ interval	: 2000  // time between transitions
                 _self.isAnim	= false;
 
             });
+            // fans656
             $('.img').click(function(e) {
                 var img = $(this);
                 var offset = img.offset();
@@ -234,6 +235,19 @@ interval	: 2000  // time between transitions
                 } else {
                     _self._navigate('next');
                 }
+            });
+            $(document).keydown(function(e) {
+                switch(e.which) {
+                    case 37: // left
+                        _self._navigate('prev');
+                        break;
+                    case 39: // right
+                        _self._navigate('next');
+                        break;
+                    default:
+                        return;
+                }
+                e.preventDefault(); // prevent the default action (scroll / move caret)
             });
 
         },

@@ -53,19 +53,19 @@
 	color: #333;
 	//font-size: 16px;
 	width: 100%;
-	bottom: -55px;
+	//bottom: -55px;
 	//display: none;
 	//position: absolute;
 }
 .dg-wrapper a div{
     display: hidden;
-    color: #fff;
+    //color: #fff;
+    color: #000;
+    font-size: 0.8em;
 }
 .dg-wrapper a.dg-center div{
 	display: block;
     //background: #aaa;
-    color: #000;
-    font-size: 0.8em;
 }
 .dg-container nav{
 	width: 58px;
@@ -96,8 +96,8 @@
 .head {
     background: #7384AE;
     padding-top: 1em;
-    padding-bottom: 4em;
-    margin-bottom: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 
 .head img {
@@ -106,7 +106,21 @@
     margin-bottom: 0.8em;
 }
 
+.head img:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px #fff);
+    filter:         drop-shadow(0px 0px 10px #fff);
+}
+
 .head h1 {
     text-align: center;
     color: #ddd;
+}
+
+.resume .header {
+    background: #7384AE;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    margin-top: -1em;
 }
