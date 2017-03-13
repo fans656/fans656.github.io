@@ -404,6 +404,18 @@ interval	: 200  // time between transitions
                 return false;
 
             this.isAnim	= true;
+            
+            // fans656
+            // dynamic load
+            // load on navigation
+            var unloaded_imgs = $('.img:not([src])');
+            console.log('unloaded images: ' + unloaded_imgs.length);
+            if (unloaded_imgs.length > 0) {
+                var img = $(unloaded_imgs[dir == 'next' ? 0 : unloaded_imgs.length - 1]);
+                img.attr('src', img.attr('data-src'));
+                img.removeAttr('data-src');
+            }
+            // eofans656
 
             switch( dir ) {
 
