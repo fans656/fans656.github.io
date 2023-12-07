@@ -94,16 +94,16 @@
 }
 
 .head {
-    background: #7384AE;
+    background: #21618C;
     padding-top: 1em;
     padding-bottom: 2em;
-    margin-bottom: 3em;
+    margin-bottom: 5em;
 }
 
 .head img {
     display: block;
     margin: auto;
-    margin-bottom: 0.8em;
+    margin-bottom: 1.5em;
 }
 
 .head img:hover {
@@ -111,7 +111,7 @@
     filter:         drop-shadow(0px 0px 10px #fff);
 }
 
-.head h1 {
+.head h3 {
     text-align: center;
     color: #ddd;
 }
@@ -129,4 +129,14 @@
     display: inline-block;
     width: 2em;
     min-width: 2em;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  flex: 1;
 }
